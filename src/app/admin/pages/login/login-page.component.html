@@ -1,0 +1,12 @@
+<form onsubmit="event.preventDefault()">
+
+  <div class="form-control">
+    <input type="text" placeholder="Username" [formControl]="usernameControl">
+  </div>
+  <div class="form-control">
+    <input type="password" placeholder="Mot de passe" [formControl]="passwordControl">
+  </div>
+
+  <button (click)="login()">Se connecter</button>
+
+</form>
